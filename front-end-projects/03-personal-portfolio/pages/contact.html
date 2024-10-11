@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keyword" content="frontend projects, roadmap.sh structured html">
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="../styles/index.css">
     <meta name="author" content="Gabriel Ibañez"> 
     <title>Contact</title>
 </head>
@@ -21,24 +21,26 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="contact-form">
             <h2>Contact Me</h2>
             <form action="#" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="10" required></textarea>
+                <fieldset>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="10" required></textarea>
+                </fieldset>
                 <button type="submit">Send</button>
               </form>
         </section>
         <aside>
             <h2>Social Media</h2>
-            <ul>
-                <ul><a href="#">Facebook</a></ul>
-                <ul><a href="#">Instagram</a></ul>
-                <ul><a href="#">LinkedIn</a></ul>
+            <ul class="contact-list">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
             </ul>
         </aside>
     </main>
