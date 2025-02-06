@@ -11,7 +11,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    height: auto;
     background-color: #dbdbdb;
 
     .testimonial-cards {
@@ -84,15 +86,48 @@ body {
             }
         }
         .card4 {
+            border: .2rem solid black;
+            padding: 2rem;
+            border-radius: 1rem;
             grid-column: span 2;
+
+            .profile__container {
+                margin-top: 2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .profile__images {
+                    text-align: center;
+                    img {
+                        margin: 0 .5rem;
+                        width: 4rem;
+                        height: 4rem;
+                        border-radius: 50%;
+                        opacity: 0.3;
+                    }
+                    .list-of-profile__active {
+                        width: 5rem;
+                        height: 5rem;
+                        opacity: 1;
+                    }
+                    .list-of-profile__name {
+                        font-weight: 600;
+                    }    
+                }
+                .symbol {
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                }
+
+            }
         }
         .arrow {
             height: 2rem;
             width: 2rem;
             background-color: #1e1e1e;
-            position: absolute;
-            top: 11.5rem;
-            left: 17.5rem;
+            position: relative;
+            top: 1.5rem;
+            left: .5rem;
             z-index: -1;
             transform: rotate(45deg);
         }
